@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dashboard</title>
+  <style>
+    body {
+      background: #0a2342;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .dashboard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    .tile {
+      background: #3a86ff;
+      color: #fff;
+      padding: 2rem 3rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+      display: flex;
+      align-items: center;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .tile:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+    }
+    .tile-icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 1rem;
+      border-radius: 0.5rem;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .tile-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.25rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: text-decoration 0.2s;
+    }
+    .tile-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="tile">
+      <span class="tile-icon">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC60lEQVQ4jVWTTWicZRSFz3nf9/tmJpPJTyWJksQojdNAm4gFoUUK05SWQsWdcVUXuhMqWtzoahaKrrSIghuliyLShaCguGmT4CLowp+FWlGpGGxFaZNOOpn5ft573JiantXZPBfuuecSd4sA9N7KieNReE5Ss95Irmx1s3PPty59CQDtNly7DdsN/C+Bb620ZlKlb0i2CseDPrgZKxV7pZ27vXFtub30Y74bcTvm4kV4EEqQPGXER3B+v2f4Jhaoec+HZf6L9b/GPjl7/uixMx8cGdvhwo5ZWkJ889LiJOFOeecejZafiFIjpAGEQ94rVESd7BbuZL6NVwC8jhZC2Nn7ncvHXwtJOBNj2WBSoBKHUAnD6GY3zJCRJGTKisJS0s0DAFYQHQC1l1uDpH8RjI3gBsrH7j8bnz78oU4fOq/mxCKL2AXpADDEwuA85tvLrQBADgCGXZgm4bJ+X4cffMYfmDzli7KLrf7f/KfzCx1TSiJgBASLmrj1bZbcyaAmN2UuptV0RM17F9HNbvDCV8+yjBkAwrsUUoREyMDCNLhRrQwD6DkAiHKTSeppFq20jAPpKI7NvYRq0kC0DKSDCICgTJakrjZYwaFdZ7SZSjVVVmxp7bf3IQCz40fw+MKrSHwNkoEgHCEA0Ve8ysL27hqg6bIoWU0b+G79Y376/csoLcd44yGM1KYQLQdBmEBQIoB+XwN3MnAIU73+bewbf8I1J45qc/tPeiaQhMIykIQgECBAVxZiSNwCAIT2ciuIuM+MZVFua2r0EU6PHiQA/XDtM2xur7OSpiLjf90nYzR5hwNvfz5bCSPR36NgC8NDQ/j91ioufP0z9tQeQD/v4Hrnp+joKZBmciAkSIiMRbQ9V6+MuVAT+7nshW4nXzALzc38+uzNrT9GffCV+mA9lKVBJjhHyUAfGNKqR95TPRvC5N3fCPDd5Sfr1SSby2K+P8r2UZjznvM3N8q9v14tovdcI7Vaq2OtA3f5X4H9ZZUISgj/AAAAAElFTkSuQmCC" alt="Changelog Icon" width="24" height="24" />
+      </span>
+      <a class="tile-link" href="https://shopify.dev/changelog" target="_blank" rel="noopener noreferrer">Changelog</a>
+    </div>
+  </div>
+</body>
+</html> 
